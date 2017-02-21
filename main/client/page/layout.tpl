@@ -8,7 +8,8 @@
         <meta name="author" content="">
         <link rel="icon" href="/static/favicon.ico">
         <title>{{ title }}</title>
-        {% require "main:static/js/jquery-1.10.2.js" %}
+        {% block customHead %}
+        {% endblock %}
     {% endhead %}
 
     {% body %}

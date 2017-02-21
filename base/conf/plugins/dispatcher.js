@@ -55,7 +55,7 @@ module.exports.dispatcher = {
      * http://www.example.com/doc/detail => app/home/action/doc/detail.js
      ***************************************************************************/
 
-    defaultRouter: 'home',
+    defaultRouter: 'main',
 
     /**
      **************************************************************************
