@@ -3,6 +3,7 @@
 {% block customHead %}
     {% script %}
         require('./index.js');
+        require('./socketio.js');
     {% endscript %}
 {% endblock %}
 

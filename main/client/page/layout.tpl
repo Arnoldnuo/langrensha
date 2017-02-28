@@ -8,6 +8,7 @@
         <meta name="author" content="">
         <link rel="icon" href="/static/favicon.ico">
         <title>{{ title }}</title>
+        <script type="text/javascript" src="../static/js/socket.io.js"></script>
         {% block customHead %}
         {% endblock %}
     {% endhead %}

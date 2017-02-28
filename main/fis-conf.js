@@ -11,6 +11,7 @@ fis.config.set('livereload.port', 35729);
 fis.enableNPM({
     autoPack: false
 });
+fis.enableES7();
 fis.match('/client/page/**.vue', {
     isMod: true,
     rExt: 'js',
@@ -37,7 +38,6 @@ fis.match('/client/page/**.js', {
     isJsXLike: true,
     isMod: true
 });
-
 
 fis.media('debug').match('*', {
     optimizer: null,

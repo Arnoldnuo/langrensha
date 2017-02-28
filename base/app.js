@@ -19,6 +19,7 @@ app.disable('x-powered-by');
 var server = yog.server = app.listen(app.get('port'), function () {
     console.log('Yog server listening on port ' + server.address().port);
 });
+let io = yog.io = require('socket.io')(server);
 
 server.on('connection', function (socket) {
     // disable nagle
@@ -31,5 +32,3 @@ if (parseInt(process.versions.node.split('.')[0], 10) >= 6) {
         socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
     });
 }
-
-
